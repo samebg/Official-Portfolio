@@ -97,7 +97,7 @@ function App() {
           </button>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
-              src="/profile.png"
+              src="https://raw.githubusercontent.com/samebg/Official-Portfolio/refs/heads/main/Pictures/Mesmilefinal.png"
               alt="Sam Ebengho Lompoko"
               className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg transform hover:scale-105 transition-transform duration-300"
             />
