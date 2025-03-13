@@ -26,8 +26,8 @@ function App() {
     {
       name: "Football - Tottenham Hotspur",
       description: "As a dedicated Spurs supporter, I live and breathe the beautiful game. The tactical evolution, the passion of the fans, and the rich history of Tottenham Hotspur captivate me. From the glory days to our current journey, supporting Spurs has been an incredible experience filled with unforgettable moments.",
-      image: "https://images.unsplash.com/photo-1551958219-acbc608c6377?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      imageCredit: "Photo by Lennart Schneider on Unsplash"
+      image: "https://raw.githubusercontent.com/samebg/Official-Portfolio/refs/heads/main/Pictures/football-sport-tottenham-hotspur-premier-league-wallpaper.jpg",
+      imageCredit: "Tottenham Hotspur"
     },
     {
       name: "Fitness Journey",
@@ -38,14 +38,14 @@ function App() {
     {
       name: "Jazz & Classical Music",
       description: "The timeless melodies of Louis Armstrong and Frank Sinatra transport me to an era of musical excellence. Their artistry, improvisation, and ability to tell stories through music inspire my creative approach to problem-solving in technology. Jazz, like coding, is about finding harmony in complexity.",
-      image: "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      imageCredit: "Photo by Miti on Unsplash"
+      image: "https://media.npr.org/assets/img/2012/01/31/louis-armstrong-3_wide-1f7c381c92278b5957df63c26e9ddab8b14c0502.jpg?s=800&c=85&f=webp",
+      imageCredit: "AFP/AFP/Getty Images"
     },
     {
       name: "World Travel",
       description: "Exploring six European countries has opened my mind to diverse perspectives and cultures. France, particularly Marseille and Nice, holds a special place in my heart. These experiences have shaped my global outlook and reinforced my belief in technology's power to connect people across borders.",
-      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      imageCredit: "Photo by Anthony DELANOIX on Unsplash"
+      image: "AFP/AFP/Getty Images",
+      imageCredit: "Photo by your very own, Sam"
     }
   ];
 
