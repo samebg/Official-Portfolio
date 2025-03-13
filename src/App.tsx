@@ -217,8 +217,8 @@ function App() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold dark:text-white">Year Up (Seattle Central College)</h3>
-                <div className="text-gray-600 dark:text-gray-400 mb-2">Sep. 2024 - Sep. 2025</div>
-                <p className="text-gray-700 dark:text-gray-300">Completed coursework in HTML, CSS, Python, Java, and JavaScript.</p>
+                <div className="text-gray-600 dark:text-gray-400 mb-2">Sep. 2024 - Mar. 2025</div>
+                <p className="text-gray-700 dark:text-gray-300">Mastered Advanced Java programming while developing strong professional skills. Gained hands-on experience with multiple IDEs and development tools. Learned essential project management methodologies including Agile and Sprint planning. Built a strong professional network through interactions with CEOs and CFOs from leading companies. Enhanced public speaking abilities and professional etiquette through intensive training and real-world practice.</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold dark:text-white">Tacoma Community College</h3>
