@@ -15,10 +15,11 @@ function App() {
   }, [darkMode]);
 
   const skills = [
-    { icon: <Code2 className="w-6 h-6" />, name: "Programming", items: ["Python", "Java", "JavaScript", "HTML", "CSS"] },
-    { icon: <Database className="w-6 h-6" />, name: "Database", items: ["SQL", "MySQL"] },
-    { icon: <Network className="w-6 h-6" />, name: "Networking", items: ["Cisco", "Juniper", "Active Directory"] },
-    { icon: <Shield className="w-6 h-6" />, name: "Security", items: ["Cybersecurity", "Incident Response"] },
+    { icon: <Code2 className="w-6 h-6" />, name: "Programming & Development", items: ["Python", "JavaScript", "HTML", "CSS", "SQL", "MySQL", "GitHub", "Visual Studio Code"] },
+    { icon: <Database className="w-6 h-6" />, name: "Database & Analytics", items: ["SQL", "MySQL", "Power BI"] },
+    { icon: <Network className="w-6 h-6" />, name: "Networking & Infrastructure", items: ["Cisco", "Juniper", "Active Directory", "Wireshark", "Hyper-V Hypervisor", "Oracle VM VirtualBox"] },
+    { icon: <Shield className="w-6 h-6" />, name: "Operating Systems & Support", items: ["Windows", "Mac OS", "Linux", "Remote Desktop Support", "Hardware/Software Troubleshooting"] },
+    { icon: <Code2 className="w-6 h-6" />, name: "Software & Tools", items: ["MS Office Suite", "Help Desk Software (Jira, Zendesk)", "Adobe Creative Suite"] }
   ];
 
   const interests = [
@@ -62,8 +63,8 @@ function App() {
       description: "A quiz designed to enhance my foundational understanding of ITIL, with a particular focus on IT Service Management (ITSM).",
       tags: ["HTML", "CSS", "JavaScript"],
       current: true,
-      link: "https://itil-quiz.netlify.app",
-      linkText: "Try ITIL Quiz (Coming Soon)"
+      link: "https://ebengho.site/quiz/",
+      linkText: "Try ITIL Quiz"
     }
   ];
 
