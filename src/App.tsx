@@ -58,10 +58,12 @@ function App() {
       linkText: "Visit Tottenham HotSam (Coming Soon)"
     },
     {
-      title: "Network Security Dashboard",
-      description: "A dashboard for monitoring network security metrics and analyzing potential threats.",
-      tags: ["Python", "Networking", "Security"],
-      current: true
+      title: "ITIL Quiz",
+      description: "A quiz designed to enhance my foundational understanding of ITIL, with a particular focus on IT Service Management (ITSM).",
+      tags: ["HTML", "CSS", "JavaScript"],
+      current: true,
+      link: "https://itil-quiz.netlify.app",
+      linkText: "Try ITIL Quiz (Coming Soon)"
     }
   ];
 
