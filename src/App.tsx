@@ -31,20 +31,20 @@ function App() {
     },
     {
       name: "Fitness Journey",
-      description: "Fitness is more than just a hobby—it's a commitment to personal growth and well-being. Through consistent training and dedication, I've learned valuable lessons about discipline, perseverance, and the importance of setting and achieving goals. My fitness journey parallels my approach to technology: constant improvement and pushing beyond limits.",
+      description: "Working out has become an essential part of my daily routine, not just for physical health but for mental clarity too. After long hours at the desk, hitting the gym helps me reset and recharge. The discipline of consistent training has taught me valuable lessons about setting goals and pushing through challenges. It's amazing how a good workout can transform both your body and mind, making you feel energized and ready to tackle anything.",
       image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       imageCredit: "Photo by Victor Freitas on Unsplash"
     },
     {
       name: "Jazz & Classical Music",
-      description: "The timeless melodies of Louis Armstrong and Frank Sinatra transport me to an era of musical excellence. Their artistry, improvisation, and ability to tell stories through music inspire my creative approach to problem-solving in technology. Jazz, like coding, is about finding harmony in complexity.",
+      description: "There's something magical about the smooth melodies of Louis Armstrong and Frank Sinatra that just can't be replicated in today's music. I find myself drawn to the meaningful lyrics and timeless compositions of that era. Whether I'm studying or just need a moment of peace, the harmonious arrangements of jazz and classical pieces create the perfect atmosphere. It's refreshing to listen to music where every note has purpose and every word tells a story.",
       image: "https://media.npr.org/assets/img/2012/01/31/louis-armstrong-3_wide-1f7c381c92278b5957df63c26e9ddab8b14c0502.jpg?s=800&c=85&f=webp",
       imageCredit: "AFP/AFP/Getty Images"
     },
     {
       name: "World Travel",
-      description: "Exploring six European countries has opened my mind to diverse perspectives and cultures. France, particularly Marseille and Nice, holds a special place in my heart. These experiences have shaped my global outlook and reinforced my belief in technology's power to connect people across borders.",
-      image: "AFP/AFP/Getty Images",
+      description: "I've been fortunate enough to explore quite a bit of the world, from eight European countries to North America and Africa. While everyone raves about Paris, I found the real magic of France in the south - the laid-back vibes of Nice and the bustling energy of Marseille are where you'll find authentic French culture away from the tourist traps. My travels through Spain, Belgium, Greece, UK, and Germany have each left their mark, and hopping across North America to Canada and Mexico has been eye-opening. But my most meaningful journey was to the Congo, where I connected with my roots and experienced a completely different way of life. What I love most about traveling isn't just seeing new places - it's the amazing people you meet and the stories you share along the way. Each trip has shaped who I am and shown me that no matter where you go, genuine connections with locals make the best memories.",
+      image: "https://raw.githubusercontent.com/samebg/Official-Portfolio/refs/heads/main/Pictures/Cancun.jpg",
       imageCredit: "Photo by your very own, Sam"
     }
   ];
