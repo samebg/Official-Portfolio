@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #FFD700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
