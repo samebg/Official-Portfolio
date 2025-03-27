@@ -10,35 +10,32 @@ body {
     justify-content: center;
 }
 
-#quiz-container {
-    max-width: 800px;
-    width: 90%;
+.app-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 95%;
     margin: auto;
+}
+
+#quiz-container {
+    flex: 1;
     padding: 30px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #2c3e50;
-    margin-bottom: 30px;
-}
-
-#progress-container {
-    width: 100%;
-    height: 10px;
-    background-color: #eee;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#progress-bar {
-    height: 100%;
-    background-color: #3498db;
-    border-radius: 5px;
-    width: 0%;
-    transition: width 0.3s ease-in-out;
+#notes-container {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 800px;
 }
 
 .option {
@@ -57,6 +54,22 @@ h1 {
 .option:hover {
     background-color: #e9ecef;
     transform: translateY(-2px);
+}
+
+#progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
 }
 
 .correct {
@@ -93,4 +106,218 @@ h1 {
 
 #restart:hover {
     background-color: #27ae60;
+}
+
+.notes-section {
+    margin-bottom: 30px;
+}
+
+.notes-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.note-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-2px);
+}
+
+.note-card h4 {
+    color: #3498db;
+    margin: 0 0 10px 0;
+}
+
+.note-card p {
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.note-card ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.note-card li {
+    color: #2c3e50;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    #quiz-container {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    #notes-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .option {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .note-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .note-card p {
+        font-size: 14px;
+    }
+
+    .note-card ul {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .note-card li {
+        margin-bottom: 8px;
+    }
+
+    #notes-area {
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .notes-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .notes-buttons button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .saved-note {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .note-date {
+        font-size: 12px;
+    }
+
+    .note-content {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .app-container {
+        padding: 5px;
+    }
+
+    #quiz-container, #notes-container {
+        padding: 10px;
+    }
+
+    .option {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    .note-card {
+        padding: 12px;
+    }
+
+    .note-card p, .note-card ul {
+        font-size: 13px;
+    }
+
+    #notes-area {
+        height: 80px;
+        font-size: 13px;
+    }
+
+    .notes-buttons button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .saved-note {
+        padding: 10px;
+    }
+
+    .note-date {
+        font-size: 11px;
+    }
+
+    .note-content {
+        font-size: 13px;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .app-container {
+        flex-direction: row;
+    }
+
+    #quiz-container, #notes-container {
+        width: 50%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #notes-area {
+        height: 60px;
+    }
 } 

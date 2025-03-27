@@ -7,15 +7,230 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>ITIL Knowledge Quiz</h1>
-        <div id="progress-container">
-            <div id="progress-bar"></div>
+    <div class="app-container">
+        <div id="quiz-container">
+            <h1>ITIL Knowledge Quiz</h1>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question">Loading question...</h2>
+            <div id="options"></div>
+            <p id="score">Score: 0</p>
+            <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
         </div>
-        <h2 id="question">Loading question...</h2>
-        <div id="options"></div>
-        <p id="score">Score: 0</p>
-        <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
+        <div id="notes-container">
+            <h2>ITIL Study Notes</h2>
+            <div class="notes-section">
+                <h3>Core Concepts</h3>
+                <div class="note-card">
+                    <h4>Service Management Frameworks</h4>
+                    <p>Define what should be present and what "good" looks like.</p>
+                    <p><br>Focus on delivering value to stakeholders.</p>
+                </div>
+                <div class="note-card">
+                    <h4>ITIL (IT Infrastructure Library)</h4>
+                    <p>A widely adopted IT Service Management (ITSM) framework.</p>
+                    <p><br>Provides best practices for managing IT services to deliver value.</p>
+                </div>
+                <div class="note-card">
+                    <h4>Service</h4>
+                    <p>A means of delivering value to both providers and consumers.</p>
+                    <p><br>Examples: Microsoft 365</p>
+                </div>
+                <div class="note-card">
+                    <h4>Stakeholders in IT Services</h4>
+                    <p><b>Providers:</b> Ensure profitable service delivery.</p>
+                    <p><br><b>Consumers:</b> Customers, users, sponsors, and suppliers.</p>
+                    <p><br><b>Suppliers:</b> Provide services that enable the provider to deliver their own services.</p>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>ITIL V3 vs. ITIL 4</h3>
+                <div class="note-card">
+                    <h4>ITIL V3 (2007-2020)</h4>
+                    <p>Focused on traditional IT (physical, on-premises).</p>
+                    <p><br>Structured around 26 processes and 4 functions in a service lifecycle (Strategy, Design, Transition, Operation, Improvement).</p>
+                </div>
+                <div class="note-card">
+                    <h4>ITIL 4 (2019)</h4>
+                    <p>Focused on modern IT (cloud, mobile, hybrid).</p>
+                    <p><br>Replace processes with 34 practices organized in a Service Value Chain (Plan, Improve, Engage, Design/Transition, Obtain/Build, Deliver/Support).</p>
+                    <p><br>Emphasizes collaboration, agility, and integration with DevOps, Agile, and Lean.</p>
+                </div>
+                <div class="note-card">
+                    <h4>Key Differences</h4>
+                    <p><b>Structure:</b></p>
+                    <ul>
+                        <li><b>V3:</b> 26 Processes and 4 functions in a lifecycle</li>
+                        <li><b>V4:</b> 34 practices organized in a Service Value Chain</li>
+                    </ul>
+                    <p><b>Focus:</b></p>
+                    <ul>
+                        <li><b>V3:</b> Process-driven, linear lifecycle</li>
+                        <li><b>V4:</b> Outcome-driven, iterative, and collaborative</li>
+                    </ul>
+                    <p><b>Integration:</b></p>
+                    <ul>
+                        <li><b>V4:</b> Better aligns with modern methodologies like DevOps, Agile, and Lean</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>ITIL 4 Framework</h3>
+                <div class="note-card">
+                    <h4>Service Value System (SVS)</h4>
+                    <p>A holistic framework for value creation.</p>
+                    <p><br>Components:</p>
+                    <ul>
+                        <li><b>Guiding Principles:</b> 7 principles (e.g., focus on value, optimize and automate).</li>
+                        <li><b>Governance:</b> Ensures alignment with organizational goals.</li>
+                        <li><b>Service Value Chain:</b> 6 activities for delivering value.</li>
+                        <li><b>Practices:</b> 34 practices (General, Service, Technical Management).</li>
+                        <li><b>Continual Improvement:</b> A recurring activity to enhance performance.</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Four Dimensions of Service Management</h4>
+                    <ul>
+                        <li><b>Organizations and People:</b> Roles, culture, and communication.</li>
+                        <li><b>Information and Technology:</b> Tools and systems for service delivery.</li>
+                        <li><b>Partners and Suppliers:</b> External relationships and contracts.</li>
+                        <li><b>Value Streams and Processes:</b> Workflows for efficient value creation.</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Service Value Chain Activities</h4>
+                    <ul>
+                        <li><b>Plan:</b> Align services with organizational strategy and objectives</li>
+                        <li><b>Improve:</b> Continuously enhance services and practices</li>
+                        <li><b>Engage:</b> Manage stakeholder relationships and expectations</li>
+                        <li><b>Design and Transition:</b> Develop and deploy new or changed services</li>
+                        <li><b>Obtain and Build:</b> Acquire or build service components and resources</li>
+                        <li><b>Deliver and Support:</b> Operate and support services to meet agreed levels</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>ITIL 4 Practices</h3>
+                <div class="note-card">
+                    <h4>General Management Practices (14)</h4>
+                    <p>These are adapted from general business management and applied to service management:</p>
+                    <ul>
+                        <li>Architecture Management</li>
+                        <li>Continual Improvement</li>
+                        <li>Information Security Management</li>
+                        <li>Knowledge Management</li>
+                        <li>Measurement and Reporting</li>
+                        <li>Organizational Change Management</li>
+                        <li>Portfolio Management</li>
+                        <li>Project Management</li>
+                        <li>Relationship Management</li>
+                        <li>Risk Management</li>
+                        <li>Service Financial Management</li>
+                        <li>Strategy Management</li>
+                        <li>Supplier Management</li>
+                        <li>Workforce and Talent Management</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Service Management Practices (17)</h4>
+                    <p>These are specific to IT service management and customer value delivery:</p>
+                    <ul>
+                        <li>Availability Management</li>
+                        <li>Business Analysis</li>
+                        <li>Capacity and Performance Management</li>
+                        <li>Change Enablement (formerly Change Management)</li>
+                        <li>Incident Management</li>
+                        <li>IT Asset Management</li>
+                        <li>Monitoring and Event Management</li>
+                        <li>Problem Management</li>
+                        <li>Release Management</li>
+                        <li>Service Catalog Management</li>
+                        <li>Service Configuration Management</li>
+                        <li>Service Continuity Management</li>
+                        <li>Service Design</li>
+                        <li>Service Desk</li>
+                        <li>Service Level Management</li>
+                        <li>Service Request Management</li>
+                        <li>Deployment Management</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Technical Management Practices (3)</h4>
+                    <p>These focus on technology-related aspects of service management:</p>
+                    <ul>
+                        <li>Deployment Management (also listed under Service Management)</li>
+                        <li>Infrastructure and Platform Management</li>
+                        <li>Software Development and Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>Key Terminology</h3>
+                <div class="note-card">
+                    <ul>
+                        <li><b>Configuration Item (CI):</b> A component managed to deliver a service (e.g., hardware, software).</li>
+                        <li><b>Incident:</b> An unplanned service interruption.</li>
+                        <li><b>Problem:</b> The root cause of one or more incidents.</li>
+                        <li><b>Known Error:</b> A problem identified but not yet resolved.</li>
+                        <li><b>Event:</b> A change of state significant for service management (e.g., server down).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>Conclusion</h3>
+                <div class="note-card">
+                    <ul>
+                        <li>ITIL 4 is a more streamlined, flexible, and modern framework compared to ITIL V3.</li>
+                        <li>It emphasizes collaboration, agility, and integration with contemporary practices like DevOps and Agile.</li>
+                        <li>The focus remains on delivering value to stakeholders through efficient and effective service management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notes-section">
+                <h3>XLM, SLA, and SLM in ITSM</h3>
+                <div class="note-card">
+                    <h4>Author Credit</h4>
+                    <p>This section is based on the article "Igniting Customer Delight: Empowering IT Service Management with XLM, SLA, and SLM" by <b>Waseem Ahmed</b>.</p>
+                    <p><br>Source: <a href="https://www.linkedin.com/pulse/igniting-customer-delight-empowering-service-management-waseem-ahmed/?trackingId=zKs6gTPFRoiUPgkHEoY5pA%3D%3D" target="_blank">LinkedIn Article (Check it out!)</a></p>
+                </div>
+                <div class="note-card">
+                    <h4>Experience Level Management (XLM)</h4>
+                    <p>XLM enhances traditional ITSM by focusing on end-user experience rather than just technical metrics.</p>
+                    <p><br>Key aspects:</p>
+                    <ul>
+                        <li>Prioritizes usability and responsiveness</li>
+                        <li>Focuses on personalization and emotional engagement</li>
+                        <li>Goes beyond traditional SLA and SLM metrics</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Integration of XLM with SLA & SLM</h4>
+                    <ul>
+                        <li><b>Expanding SLAs:</b> Incorporating experience-driven factors like customer satisfaction</li>
+                        <li><b>Aligning SLM:</b> Adapting service management to prioritize user impact</li>
+                        <li><b>XLM Metrics:</b> Measuring customer effort, sentiment, and satisfaction</li>
+                        <li><b>Governance:</b> Implementing structured monitoring and reporting mechanisms</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Real-World Applications</h4>
+                    <ul>
+                        <li><b>Financial Institution:</b> Improved online banking services using XLM metrics</li>
+                        <li><b>E-commerce Company:</b> Enhanced order fulfillment process with XLM-driven SLAs</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>Key Insights and Call to Action</h4>
+                    <ul>
+                        <li>XLM bridges the gap between technical performance and customer satisfaction</li>
+                        <li>Organizations must embrace XLM for emotionally resonant experiences</li>
+                        <li>IT leaders should integrate XLM with existing SLA and SLM practices</li>
+                        <li>Focus on emotional intelligence in service delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="quiz.js"></script>
 </body>

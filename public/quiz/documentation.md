@@ -241,10 +241,10 @@ function checkAnswer(selectedOption, selectedButton) {
 #### Performance Rating
 ```javascript
 function getPerformanceRating(percentage) {
-    if (percentage >= 90) return "Outstanding! ITIL Expert Level";
-    if (percentage >= 80) return "Excellent! ITIL Professional Level";
-    if (percentage >= 70) return "Good! ITIL Intermediate Level";
-    if (percentage >= 60) return "Fair! ITIL Foundation Level";
+    if (percentage >= 90) return "Maestro!!!!";
+    if (percentage >= 80) return "I love where this is going! Nice job";
+    if (percentage >= 70) return "Not bad! You're still not there yet";
+    if (percentage >= 60) return "Awful! You can do better";
     return "Need more practice with ITIL concepts";
 }
 ```

@@ -1,103 +1,303 @@
-const quizData = [
+const questions = [
     {
-        question: "What is the purpose of Event Management in ITIL 4?",
+        question: "What is ITIL?",
         options: [
-            "To restore service as quickly as possible",
-            "To systematically detect and respond to service events",
-            "To manage user access rights",
-            "To monitor customer satisfaction"
+            "A widely adopted IT Service Management (ITSM) framework",
+            "A programming language",
+            "A database management system",
+            "A cloud computing platform"
         ],
-        answer: "To systematically detect and respond to service events"
+        correct: 0
     },
     {
-        question: "Which ITIL 4 practice aims to minimize business disruption caused by incidents?",
+        question: "What is the main focus of ITIL 4 compared to ITIL V3?",
         options: [
-            "Problem Management",
-            "Incident Management",
-            "Change Enablement",
-            "Access Management"
+            "Only hardware management",
+            "Modern IT (cloud, mobile, hybrid)",
+            "Only software development",
+            "Traditional IT (physical, on-premises)"
         ],
-        answer: "Incident Management"
+        correct: 1
     },
     {
-        question: "What is a key focus of the 'Focus on Value' guiding principle in ITIL 4?",
+        question: "How many practices are there in ITIL 4?",
         options: [
-            "Maximizing profit for the organization",
-            "Creating value for all stakeholders",
-            "Reducing operational costs",
-            "Implementing new technologies"
+            "26",
+            "40",
+            "34",
+            "50"
         ],
-        answer: "Creating value for all stakeholders"
+        correct: 2
     },
     {
-        question: "Which component of the ITIL 4 Service Value System provides the framework for all forms of contribution to value co-creation?",
+        question: "What is a Configuration Item (CI)?",
+        options: [
+            "A type of database",
+            "A network protocol",
+            "A security certificate",
+            "A component managed to deliver a service"
+        ],
+        correct: 3
+    },
+    {
+        question: "Which of these is NOT a Service Value Chain activity?",
+        options: [
+            "Delete",
+            "Plan",
+            "Improve",
+            "Engage"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is the difference between an Incident and a Problem?",
+        options: [
+            "There is no difference",
+            "A problem is the root cause of one or more incidents",
+            "An incident is the root cause of a problem",
+            "Problems are more severe than incidents"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which dimension of Service Management focuses on roles, culture, and communication?",
+        options: [
+            "Information and Technology",
+            "Partners and Suppliers",
+            "Organizations and People",
+            "Value Streams and Processes"
+        ],
+        correct: 2
+    },
+    {
+        question: "What is the purpose of the Service Value System (SVS)?",
+        options: [
+            "To manage hardware inventory",
+            "To handle network security",
+            "To manage software licenses",
+            "To create a holistic framework for value creation"
+        ],
+        correct: 3
+    },
+    {
+        question: "Which practice category has the most practices in ITIL 4?",
+        options: [
+            "Service Management Practices",
+            "General Management Practices",
+            "Technical Management Practices",
+            "Security Management Practices"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is a Known Error?",
+        options: [
+            "A type of virus",
+            "A problem identified but not yet resolved",
+            "A network error",
+            "A software bug"
+        ],
+        correct: 1
+    },
+    {
+        question: "Who created this ITIL quiz?",
+        options: [
+            "Samson L Jackson",
+            "James Bond",
+            "Batman",
+            "Sam Ebengho Lompoko"
+        ],
+        correct: 3
+    },
+    {
+        question: "True or False: In ITIL V3, value flows unidirectionally from provider to consumer.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 0
+    },
+    {
+        question: "Which of these is an example of an Outcome in ITIL?",
+        options: [
+            "A completed system installation",
+            "A satisfied user saying 'This system is great!'",
+            "A service desk ticket",
+            "A configuration item"
+        ],
+        correct: 1
+    },
+    {
+        question: "True or False: ITIL V3 is focused on modern IT (cloud, mobile, hybrid).",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 1
+    },
+    {
+        question: "How many Guiding Principles are there in ITIL 4?",
+        options: [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        correct: 2
+    },
+    {
+        question: "True or False: The 'Start Where You Are' principle suggests starting from scratch without considering existing resources.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 0
+    },
+    {
+        question: "Which of these is NOT one of the Four Dimensions of Service Management?",
+        options: [
+            "Organizations and People",
+            "Information and Technology",
+            "Security and Compliance",
+            "Partners and Suppliers"
+        ],
+        correct: 2
+    },
+    {
+        question: "True or False: An Event is always a negative occurrence in service management.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which ITIL 4 practice category has the fewest practices?",
+        options: [
+            "General Management Practices",
+            "Service Management Practices",
+            "Technical Management Practices",
+            "Security Management Practices"
+        ],
+        correct: 2
+    },
+    {
+        question: "True or False: The Service Value Chain in ITIL 4 has 5 activities.",
+        options: [
+            "True",
+            "False"
+        ],
+        correct: 0
+    },
+    {
+        question: "What is the main difference in value creation between ITIL V3 and V4?",
+        options: [
+            "V3 focuses on cost reduction while V4 focuses on revenue",
+            "V3 is unidirectional while V4 is collaborative",
+            "V3 is collaborative while V4 is unidirectional",
+            "There is no difference in value creation"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the primary purpose of the 'Think and Work Holistically' guiding principle?",
+        options: [
+            "To focus on individual components only",
+            "To understand how all parts of an organization work together",
+            "To work in isolation",
+            "To ignore system interactions"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which of these best describes the 'Progress Iteratively with Feedback' principle?",
+        options: [
+            "Complete everything at once",
+            "Work in small, adaptive cycles",
+            "Ignore feedback from stakeholders",
+            "Make changes without testing"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is the main purpose of the 'Collaborate and Promote Visibility' principle?",
+        options: [
+            "To work in silos",
+            "To keep information secret",
+            "To foster teamwork and transparency",
+            "To avoid communication"
+        ],
+        correct: 2
+    },
+    {
+        question: "Which of these is NOT a key component of the Service Value System (SVS)?",
         options: [
             "Guiding Principles",
-            "Governance",
             "Service Value Chain",
+            "Project Management",
             "Practices"
         ],
-        answer: "Service Value Chain"
+        correct: 2
     },
     {
-        question: "What is the primary purpose of Problem Management in ITIL 4?",
+        question: "What is the main difference between Outputs and Outcomes in ITIL?",
         options: [
-            "To resolve incidents quickly",
-            "To reduce the likelihood and impact of incidents by identifying actual and potential causes",
-            "To manage changes in the organization",
-            "To handle service requests"
+            "Outputs are more important than Outcomes",
+            "Outcomes are the deliverables, Outputs are the results",
+            "Outputs are the deliverables, Outcomes are the results stakeholders want",
+            "There is no difference between Outputs and Outcomes"
         ],
-        answer: "To reduce the likelihood and impact of incidents by identifying actual and potential causes"
+        correct: 2
     },
     {
-        question: "Which ITIL 4 practice ensures that services achieve agreed and expected performance?",
+        question: "Which of these is a key characteristic of ITIL 4's approach to value creation?",
         options: [
-            "Service Level Management",
-            "Capacity Management",
-            "Availability Management",
-            "Performance Management"
+            "Value is created by the provider only",
+            "Value is co-created collaboratively among stakeholders",
+            "Value is created by consumers only",
+            "Value creation is not important in ITIL 4"
         ],
-        answer: "Service Level Management"
+        correct: 1
     },
     {
-        question: "What is the purpose of the 'Progress iteratively with feedback' guiding principle in ITIL 4?",
+        question: "What is the purpose of the 'Keep It Simple and Practical' principle?",
         options: [
-            "To complete projects as quickly as possible",
-            "To organize work into smaller, manageable sections that can be executed and improved upon",
-            "To avoid making any changes to existing processes",
-            "To implement all changes simultaneously"
+            "To make everything complex",
+            "To avoid unnecessary complexity",
+            "To ignore best practices",
+            "To make everything theoretical"
         ],
-        answer: "To organize work into smaller, manageable sections that can be executed and improved upon"
+        correct: 1
     },
     {
-        question: "Which ITIL 4 practice focuses on moving new or changed hardware, software, documentation, processes, or any other component to live environments?",
+        question: "Which of these best describes the 'Optimize and Automate' principle?",
         options: [
-            "Change Control",
-            "Release Management",
-            "Deployment Management",
-            "Transition Management"
+            "To avoid automation completely",
+            "To automate everything without optimization",
+            "To maximize efficiency through automation",
+            "To ignore efficiency"
         ],
-        answer: "Release Management"
+        correct: 2
     },
     {
-        question: "What is the main purpose of the Service Desk practice in ITIL 4?",
+        question: "What is the main focus of the 'Focus on Value' principle?",
         options: [
-            "To be the point of communication between the service provider and all its users",
-            "To manage technical infrastructure",
-            "To implement changes in the organization",
-            "To develop new services"
+            "To ignore stakeholder needs",
+            "To prioritize activities that deliver stakeholder value",
+            "To focus only on cost reduction",
+            "To ignore business objectives"
         ],
-        answer: "To be the point of communication between the service provider and all its users"
+        correct: 1
     },
     {
-        question: "Which of the following is a key component of the 'Think and work holistically' principle in ITIL 4?",
+        question: "Which of these is NOT a key difference between ITIL V3 and V4?",
         options: [
-            "Working in silos",
-            "Focusing on individual components only",
-            "Understanding how all the parts of an organization work together in an integrated way",
-            "Implementing changes without considering their impact"
+            "V3: Process-driven, V4: Outcome-driven",
+            "V3: 26 processes, V4: 34 practices",
+            "V3: Modern IT, V4: Traditional IT",
+            "V3: Linear lifecycle, V4: Iterative approach"
         ],
-        answer: "Understanding how all the parts of an organization work together in an integrated way"
+        correct: 2
     }
 ];
 
@@ -105,55 +305,47 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function updateProgressBar() {
-    const progress = (currentQuestionIndex / quizData.length) * 100;
-    document.getElementById("progress-bar").style.width = `${progress}%`;
+    const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+    document.getElementById('progress-bar').style.width = `${progress}%`;
 }
 
 function loadQuestion() {
-    const currentQuestion = quizData[currentQuestionIndex];
-    document.getElementById("question").textContent = currentQuestion.question;
-    const optionsContainer = document.getElementById("options");
-    optionsContainer.innerHTML = "";
+    const question = questions[currentQuestionIndex];
+    document.getElementById('question').textContent = question.question;
     
-    currentQuestion.options.forEach(option => {
-        const button = document.createElement("button");
-        button.textContent = option;
-        button.classList.add("option");
-        button.onclick = () => checkAnswer(option, button);
-        optionsContainer.appendChild(button);
+    const optionsContainer = document.getElementById('options');
+    optionsContainer.innerHTML = '';
+    
+    question.options.forEach((option, index) => {
+        const optionElement = document.createElement('div');
+        optionElement.className = 'option';
+        optionElement.textContent = option;
+        optionElement.onclick = () => checkAnswer(index);
+        optionsContainer.appendChild(optionElement);
     });
     
     updateProgressBar();
 }
 
-function checkAnswer(selectedOption, selectedButton) {
-    const correctAnswer = quizData[currentQuestionIndex].answer;
+function checkAnswer(selectedIndex) {
+    const question = questions[currentQuestionIndex];
     const options = document.querySelectorAll('.option');
     
-    // Disable all options after selection
-    options.forEach(option => {
-        option.disabled = true;
-        option.style.cursor = 'default';
-    });
+    options.forEach(option => option.style.pointerEvents = 'none');
     
-    if (selectedOption === correctAnswer) {
+    if (selectedIndex === question.correct) {
+        options[selectedIndex].classList.add('correct');
         score++;
-        selectedButton.classList.add('correct');
     } else {
-        selectedButton.classList.add('incorrect');
-        // Highlight the correct answer
-        options.forEach(option => {
-            if (option.textContent === correctAnswer) {
-                option.classList.add('correct');
-            }
-        });
+        options[selectedIndex].classList.add('incorrect');
+        options[question.correct].classList.add('correct');
     }
     
-    document.getElementById("score").textContent = `Score: ${score}`;
+    document.getElementById('score').textContent = `Score: ${score}/${currentQuestionIndex + 1}`;
     
     setTimeout(() => {
         currentQuestionIndex++;
-        if (currentQuestionIndex < quizData.length) {
+        if (currentQuestionIndex < questions.length) {
             loadQuestion();
         } else {
             showFinalScore();
@@ -162,28 +354,28 @@ function checkAnswer(selectedOption, selectedButton) {
 }
 
 function showFinalScore() {
-    const percentage = (score / quizData.length) * 100;
-    const container = document.getElementById("quiz-container");
-    container.innerHTML = `
-        <h2>Quiz Completed!</h2>
-        <p id="score">Final Score: ${score}/${quizData.length} (${percentage.toFixed(1)}%)</p>
-        <p>Performance Rating: ${getPerformanceRating(percentage)}</p>
-        <button id="restart" onclick="restartQuiz()" style="display: block">Restart Quiz</button>
+    const percentage = (score / questions.length) * 100;
+    const rating = getPerformanceRating(percentage);
+    
+    document.getElementById('quiz-container').innerHTML = `
+        <h1>Quiz Complete!</h1>
+        <h2>Your Score: ${score}/${questions.length} (${percentage.toFixed(1)}%)</h2>
+        <p>Performance Rating: ${rating}</p>
+        <button onclick="restartQuiz()">Try Again</button>
     `;
 }
 
 function getPerformanceRating(percentage) {
-    if (percentage >= 90) return "Outstanding! ITIL Expert Level";
-    if (percentage >= 80) return "Excellent! ITIL Professional Level";
-    if (percentage >= 70) return "Good! ITIL Intermediate Level";
-    if (percentage >= 60) return "Fair! ITIL Foundation Level";
-    return "Need more practice with ITIL concepts";
+    if (percentage >= 90) return "Excellent! You're an ITIL expert!";
+    if (percentage >= 70) return "Good! You have a solid understanding of ITIL.";
+    if (percentage >= 50) return "Fair. Keep studying to improve your knowledge.";
+    return "Needs improvement. Review the study notes and try again.";
 }
 
 function restartQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    document.getElementById("quiz-container").innerHTML = `
+    document.getElementById('quiz-container').innerHTML = `
         <h1>ITIL Knowledge Quiz</h1>
         <div id="progress-container">
             <div id="progress-bar"></div>
@@ -191,10 +383,66 @@ function restartQuiz() {
         <h2 id="question">Loading question...</h2>
         <div id="options"></div>
         <p id="score">Score: 0</p>
-        <button id="restart" onclick="restartQuiz()" style="display: none">Restart Quiz</button>
+        <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
     `;
     loadQuestion();
 }
 
+// Notes functionality
+function saveNotes() {
+    const notesArea = document.getElementById('notes-area');
+    const savedNotes = document.getElementById('saved-notes');
+    const currentDate = new Date().toLocaleString();
+    
+    if (notesArea.value.trim() !== '') {
+        const noteElement = document.createElement('div');
+        noteElement.className = 'saved-note';
+        noteElement.innerHTML = `
+            <p class="note-date">${currentDate}</p>
+            <p class="note-content">${notesArea.value}</p>
+        `;
+        savedNotes.appendChild(noteElement);
+        notesArea.value = '';
+        
+        // Save to localStorage
+        const savedNotesArray = JSON.parse(localStorage.getItem('quizNotes') || '[]');
+        savedNotesArray.push({
+            date: currentDate,
+            content: noteElement.querySelector('.note-content').textContent
+        });
+        localStorage.setItem('quizNotes', JSON.stringify(savedNotesArray));
+    }
+}
+
+function clearNotes() {
+    const notesArea = document.getElementById('notes-area');
+    const savedNotes = document.getElementById('saved-notes');
+    
+    if (confirm('Are you sure you want to clear all notes?')) {
+        notesArea.value = '';
+        savedNotes.innerHTML = '';
+        localStorage.removeItem('quizNotes');
+    }
+}
+
+// Load saved notes when the page loads
+function loadSavedNotes() {
+    const savedNotes = document.getElementById('saved-notes');
+    const savedNotesArray = JSON.parse(localStorage.getItem('quizNotes') || '[]');
+    
+    savedNotesArray.forEach(note => {
+        const noteElement = document.createElement('div');
+        noteElement.className = 'saved-note';
+        noteElement.innerHTML = `
+            <p class="note-date">${note.date}</p>
+            <p class="note-content">${note.content}</p>
+        `;
+        savedNotes.appendChild(noteElement);
+    });
+}
+
+// Load saved notes when the page loads
+document.addEventListener('DOMContentLoaded', loadSavedNotes);
+
 // Start the quiz when the page loads
-loadQuestion(); 
+document.addEventListener('DOMContentLoaded', loadQuestion); 
