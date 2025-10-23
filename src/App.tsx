@@ -15,11 +15,10 @@ function App() {
   }, [darkMode]);
 
   const skills = [
-    { icon: <Code2 className="w-6 h-6" />, name: "Programming & Development", items: ["Python", "JavaScript", "HTML", "CSS", "SQL", "MySQL", "GitHub", "Visual Studio Code"] },
-    { icon: <Database className="w-6 h-6" />, name: "Database & Analytics", items: ["SQL", "MySQL", "Power BI"] },
-    { icon: <Network className="w-6 h-6" />, name: "Networking & Infrastructure", items: ["Cisco", "Juniper", "Active Directory", "Wireshark", "Hyper-V Hypervisor", "Oracle VM VirtualBox"] },
-    { icon: <Shield className="w-6 h-6" />, name: "Operating Systems & Support", items: ["Windows", "Mac OS", "Linux", "Remote Desktop Support", "Hardware/Software Troubleshooting"] },
-    { icon: <Code2 className="w-6 h-6" />, name: "Software & Tools", items: ["MS Office Suite", "Help Desk Software (Jira, Zendesk)", "Adobe Creative Suite"] }
+    { icon: <Code2 className="w-6 h-6" />, name: "Development & Programming", items: ["Python", "JavaScript", "TypeScript", "HTML", "CSS", "React.js", "SQL", "MySQL", "GitHub", "API Integration", "REST APIs"] },
+    { icon: <Database className="w-6 h-6" />, name: "ITSM & Operations", items: ["ServiceNow", "Power Automate", "Microsoft Azure", "Power BI", "Microsoft Power Apps", "ITIL", "Incident Management", "Change Management", "Problem Management", "Knowledge Management", "Automation"] },
+    { icon: <Network className="w-6 h-6" />, name: "Infrastructure & Tools", items: ["Windows", "Linux", "Active Directory", "Cisco", "Juniper", "Hyper-V", "Jira", "Zendesk", "Wireshark", "OCI"] },
+    { icon: <Shield className="w-6 h-6" />, name: "AI & Machine Learning", items: ["Artificial Intelligence (AI)", "Machine Learning", "Artificial Neural Networks", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Generative Neural Networks", "Deep Neural Networks (DNN)", "Deep Learning", "Large Language Models (LLM)", "OCI Generative AI Service", "Retrieval-Augmented Generation (RAG)", "Microsoft Azure Machine Learning", "Natural Language Processing (NLP)", "Generative AI", "Event Correlation", "Alert Management", "MID Servers", "Flow Designer", "CMDB", "Metric Intelligence", "Anomaly Detection", "ML-based Solutions"] }
   ];
 
   const interests = [
@@ -50,6 +49,22 @@ function App() {
   ];
 
   const projects = [
+    {
+      title: "BECU Incident Reduction System",
+      description: "Implemented intelligent alert correlation system achieving 86% noise reduction, reducing incidents from 16,000 YTD to manageable levels within a 1M+ incident monitoring environment. Built automated incident escalation using Power Automate with API integration for ITIL-based decision making.",
+      tags: ["ServiceNow", "Power Automate", "ITIL", "API Integration", "Event Correlation"],
+      current: true,
+      link: null,
+      linkText: null
+    },
+    {
+      title: "AIOps Implementation",
+      description: "Developed comprehensive AIOps solutions including CI health scoring, alert enrichment, and ML-based anomaly detection. Configured MID Servers for metric ingestion into ServiceNow via Insight Explorer, enabling Metric Intelligence and automated anomaly detection.",
+      tags: ["AIOps", "ServiceNow", "MID Servers", "ML", "Anomaly Detection"],
+      current: true,
+      link: null,
+      linkText: null
+    },
     {
       title: "Tottenham HotSam",
       description: "A dedicated platform for Spurs fans to stay updated with game day information, including match schedules, team lineups, and live updates. Built with React and featuring real-time notifications for upcoming matches.",
@@ -106,9 +121,9 @@ function App() {
             />
             <div>
               <h1 className="text-4xl font-bold mb-2">Sam Ebengho Lompoko</h1>
-              <h2 className="text-2xl mb-2">Aspiring AI & Software Engineer</h2>
-              <p className="text-lg mb-4 text-gray-200">Networking & Cybersecurity Graduate | Passionate About AI, Data Science & Continuous Learning</p>
-              <p className="text-xl font-semibold italic mb-4">"Driven to Master Any Challenge"</p>
+              <h2 className="text-2xl mb-2">Aspiring AI Engineer & Software Developer</h2>
+              <p className="text-lg mb-4 text-gray-200">Results-driven IT professional with over 3 years of experience in technical support, IT operations, and software development, specializing in IT Service Management (ITSM) and automation</p>
+              <p className="text-xl font-semibold italic mb-4">"Translating complex technical challenges into scalable solutions"</p>
               <div className="flex gap-4">
                 <a href="https://github.com/samebg" target="_blank" rel="noopener noreferrer" 
                    className="hover:text-blue-200 transition-colors transform hover:scale-110">
@@ -173,13 +188,13 @@ function App() {
             <h2 className="text-2xl font-bold mb-4 dark:text-white">About Me</h2>
             <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
               <p>
-                I'm Sam Ebengho, a passionate Software Engineering student with a strong foundation in Information Systems Networking & Cybersecurity and Technical Support. Currently enrolled in the YearUp program at Seattle Central College, I'm expanding my expertise in software development, with Python as my primary programming language. I am also diving into Artificial Intelligence and Data Science, seeking hands-on learning experiences.
+                I'm Sam Ebengho, a results-driven IT professional with 3+ years of experience spanning technical support, IT operations, and software development. I specialize in IT Service Management (ITSM) and automation, with demonstrated expertise in ServiceNow Event Management, AIOps implementation, and incident reduction strategies.
               </p>
               <p>
-                With a background as an Office Clerk at Tacoma Community College (2022 - 2024), I developed strong problem-solving, customer service, and data management skills. I thrive in collaborative environments, where I can uplift and support others while tackling technical challenges.
+                Currently serving as an IT Service Level Manager Intern at BECU, I've achieved 86% noise reduction by implementing intelligent alert correlation, reducing incidents from 16,000 YTD to manageable levels within a 1M+ incident monitoring environment. I've developed automated incident escalation using Power Automate with API integration for ITIL-based decision making.
               </p>
               <p>
-                I aspire to leverage my skills to make technology more accessible and impactful, both in the U.S. and in my home country, the Congo, where I dream of establishing a reliable Internet Service Provider (ISP) and teaching underprivileged children about technology.
+                My proven track record includes building event correlation flows using ServiceNow Flow Designer, configuring MID Servers for metric ingestion, and implementing AIOps solutions including CI health scoring, alert enrichment, and ML-based anomaly detection. I excel at bridging the gap between development and operations teams while translating complex technical challenges into scalable solutions.
               </p>
             </div>
             <div className="mt-4">
@@ -187,6 +202,20 @@ function App() {
               <div className="flex items-center gap-2 dark:text-gray-300">
                 <Languages className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 <span>Fluent English, Fluent French</span>
+              </div>
+            </div>
+            <div className="mt-4">
+              <h3 className="text-xl font-semibold mb-2 dark:text-white">Articles</h3>
+              <div className="flex items-center gap-2 dark:text-gray-300">
+                <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                <a 
+                  href="https://yupro.com/blogs/the-unexpected-drivers-of-ai-innovation/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline"
+                >
+                  My Story
+                </a>
               </div>
             </div>
           </div>
@@ -197,14 +226,24 @@ function App() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-bold mb-4 dark:text-white">Professional Experience</h2>
             <div className="mb-6">
+              <h3 className="text-xl font-semibold dark:text-white">IT Service Level Manager Intern</h3>
+              <div className="text-gray-600 dark:text-gray-400 mb-2">BECU | Mar. 2025 – Aug. 2025 (Completed)</div>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                <li>Achieved 86% noise reduction by implementing intelligent alert correlation, reducing incidents from 16,000 YTD (July) to manageable levels within a 1M+ incident monitoring environment</li>
+                <li>Developed automated incident escalation using Power Automate with API integration for ITIL-based decision making</li>
+                <li>Built event correlation flows using ServiceNow Flow Designer with CMDB relationships and logic-based alert codes</li>
+                <li>Configured MID Servers for metric ingestion into ServiceNow via Insight Explorer, enabling Metric Intelligence and anomaly detection</li>
+                <li>Implemented AIOps solutions including CI health scoring, alert enrichment, and ML-based anomaly detection</li>
+                <li>Led cross-functional collaboration with Event Management, CMDB, and Monitoring teams to design alert rules and implement bot-assisted routing</li>
+              </ul>
+            </div>
+            <div className="mb-6">
               <h3 className="text-xl font-semibold dark:text-white">Office Clerk</h3>
               <div className="text-gray-600 dark:text-gray-400 mb-2">Tacoma Community College | Jan. 2022 – Aug. 2024</div>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li>Participated in customer service initiatives, addressing inquiries from several clients daily while maintaining professionalism and attention to detail.</li>
-                <li>Improved data entry processes, increasing accuracy rates for the type of records while simultaneously boosting overall departmental efficiency.</li>
-                <li>Skillfully connect students and tutors via Zoom, ensuring seamless virtual collaboration.</li>
-                <li>Navigate student queries beyond the role, offering solutions and guidance with a knack for creative problem-solving.</li>
-                <li>Manage calls, schedule appointments, and expertly handle inquiries, creating a welcoming front desk experience.</li>
+                <li>Streamlined data entry processes and managed high-volume customer interactions with students and faculty</li>
+                <li>Facilitated virtual collaboration via Zoom coordination and provided creative problem-solving for complex inquiries</li>
+                <li>Maintained professional operations, including multi-line phone systems, scheduling, and visitor management</li>
               </ul>
             </div>
           </div>
@@ -217,20 +256,62 @@ function App() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold dark:text-white">Year Up (Seattle Central College)</h3>
-                <div className="text-gray-600 dark:text-gray-400 mb-2">Sep. 2024 - Mar. 2025</div>
-                <p className="text-gray-700 dark:text-gray-300">Mastered Advanced Java programming while developing strong professional skills. Gained hands-on experience with multiple IDEs and development tools. Learned essential project management methodologies including Agile and Sprint planning. Built a strong professional network through interactions with CEOs and CFOs from leading companies. Enhanced public speaking abilities and professional etiquette through intensive training and real-world practice.</p>
+                <div className="text-gray-600 dark:text-gray-400 mb-2">Software Development Bootcamp | Sep. 2024 - Aug. 2025</div>
+                <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                  <li>Full-stack development: Python, Java, JavaScript, HTML, CSS, React.js</li>
+                  <li>Data analysis and visualization using Power BI and SQL for business intelligence reporting</li>
+                  <li>Game design and development with focus on user experience and functionality</li>
+                  <li>API integration and Java debugging for enterprise applications</li>
+                  <li>Project coordination and team collaboration on cross-functional development projects</li>
+                  <li>Professional skills training in Excel, Business Writing, and Public Speaking</li>
+                </ul>
               </div>
               <div>
                 <h3 className="text-xl font-semibold dark:text-white">Tacoma Community College</h3>
                 <div className="text-gray-600 dark:text-gray-400 mb-2">Associate of Applied Science - Information Technology, Networking & Cybersecurity | Sept. 2021 - Aug. 2023</div>
-                <p className="text-gray-700 dark:text-gray-300">Completed coursework in Networking, Database Implementation, Administration of Networks, Project Management, Introduction to Programming, Database Programming, Internetworking, Client/Server Technology -LANs, Cybersecurity, Incident Response & Intrusion, Service and Support Fundamentals, Security Assessment & Remediation.</p>
+                <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                  <li>Networking Database Implementation, Administration of Networks, Project Management</li>
+                  <li>Introduction to Programming, Database Programming, Internetworking</li>
+                  <li>Client/Server Technology -LANs, Cybersecurity, Incident Response & Intrusion</li>
+                  <li>Service and Support Fundamentals, Security Assessment & Remediation</li>
+                </ul>
               </div>
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold mb-2 dark:text-white">Certifications</h3>
-              <div className="flex items-center gap-2 dark:text-gray-300">
-                <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                <span>Technical Support, Help Desk, CompTIA A Core 1, CompTIA A Core 2, CompTIA Linux+</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Microsoft Azure Fundamentals</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Microsoft AI Fundamentals</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Microsoft Power Platform Fundamentals</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Agentic AI Executive Micro-Cert</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>OCI AI Foundations Associate</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>OCI Generative AI Professional</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Technical Support & Help Desk</span>
+                </div>
+                <div className="flex items-center gap-2 dark:text-gray-300">
+                  <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <span>Learning ITIL</span>
+                </div>
               </div>
             </div>
           </div>
@@ -308,7 +389,7 @@ function App() {
                         </span>
                       ))}
                     </div>
-                    {project.link && (
+                    {project.link && project.linkText && (
                       <a
                         href={project.link}
                         target="_blank"
